@@ -1,0 +1,43 @@
+name:
+    css: '#productTitle'
+    type: Text
+price:
+    css: 'span.a-offscreen'
+    type: Text
+short_description:
+    css: '#featurebullets_feature_div'
+    type: Text
+images:
+    css: '.imgTagWrapper img'
+    type: Attribute
+    attribute: data-a-dynamic-image
+rating:
+    css: 'span.reviewCountTextLinkedHistogram.noUnderline span.a-size-base.a-color-base'
+    type: Text
+review_count:
+    css: 'span[data-hook="total-review-count"].a-size-base.a-color-secondary'
+    type: Text
+product_description:
+    css: '#productDescription'
+    type: Text
+link_to_all_reviews:
+    css: 'div.card-padding a.a-link-emphasis'
+    type: Link
+seller_name:
+    css: 'span.a-size-small.offer-display-feature-text-message a#sellerProfileTriggerId'
+    type: Text
+seller_link:
+    css: 'span.a-size-small.offer-display-feature-text-message a#sellerProfileTriggerId'
+    type: Attribute
+    attribute: href
+link_five_star:
+    css: 'a[aria-label="All 5 star reviews"].a-size-base.a-link-normal'
+    type: Attribute
+    attribute: href
+link_one_star:
+    css: 'a[aria-label="All 1 star reviews"].a-size-base.a-link-normal'
+    type: Attribute
+    attribute: href
+best_sellers_rank:
+    css: 'tr th.a-color-secondary.a-size-base.prodDetSectionEntry:contains("Best Sellers Rank") + td span'
+    type: Text

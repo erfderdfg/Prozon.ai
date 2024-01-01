@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Selector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="h-14 min-h-screen flex flex-col items-center justify-center">
+    <nav class=" p-2 h-12 w-full fixed top-0">
+        <div class="flex justify-between items-center">
+            <h1 class="text-white text-lg font-semibold pl-4">prozon.ai</h1>
+            <ul class="flex space-x-4 text-sm pr-4">
+                <li><a href="home.html" class="text-white hover:text-yellow-200">Home</a></li>
+                <li><a href="links.html" class="text-white hover:text-yellow-200">Input Products</a></li>
+                <li><a href="table.html" class="text-white hover:text-yellow-200">Chart</a></li>
+                <li><a href="preferences.html" class="text-white hover:text-yellow-200">Recommendations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Section, hidden initially -->
+    <div id="mainContent" class="container max-w-md mx-auto p-8 bg-orange-50 shadow-lg rounded flex-col items-center">
+        <h2 class="text-3xl font-semibold mb-5 text-orange-500 text-center">What are you looking for in your product?</h2>
+
+        <input type="text" id="clothesType" placeholder="e.g., I want a laptop with high RAM..." class="border-2 border-orange-200 rounded p-3 w-full mb-5 focus:border-orange-500 focus:ring focus:ring-orange-300"/>
+
+        <button id="showOptions" class="bg-orange-500 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded-full cursor-pointer w-full mb-5">
+           Your Best Option
+        </button>        
+
+        <div id="options" class="hidden space-y-4"  style="overflow: auto; height: 300px;";>
+            <div class="option-1 border p-4 rounded hover:shadow-md transition duration-300 bg-orange-100" >
+                <center>
+                    <small>
+                <p class="option-text text-orange-700"> Monster Trucks Inertia Car Toys - Friction Powered Car Toys for Toddlers Kids Birthday Christmas Party Supplies Gift for Boys and Girls (4 Color)</p>
+                <br>
+                 <p class="paragraph-text text-gray-700">
+                    The Monster Trucks Inertia Car Toys, is a budget-friendly option with a focus on teaching kids about inertia and friction. It offers a good educational element, and the seller claims responsive customer service. On the other hand, the Hamdol Remote Control Car, offers a more versatile and exciting play experience with 360° flips and rechargeable batteries, although it's pricier. Both products claim responsive customer service, so checking customer reviews may help make your decision. The product's price is $20.99 which is competitive for the features it offers. The product has a rating of 4.6 out of 5. It has 2664.0 reviews from customers. It has 2664.0 reviews from customers. Based on the provided criteria and prompt, this laptop is recommended as the best choice. The weighted score is 670.72 out of 1.0, where higher scores indicate a better fit for your needs.</p></small>
+                
+                <button class="select-option bg-orange-500 hover:bg-orange-300 text-white font-bold py-1 px-3 rounded mt-3">Link</button>
+            </center>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="circles-container" class="fixed bottom-0 w-full flex justify-center justify-between pointer-events-none"  style="z-index: -100"></div>
+
+    <style>
+        .circle {
+            border-radius: 50%;
+            position: absolute;
+            bottom: 10px;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            opacity: 0.8;
+        }
+      
+        .orange-circle {
+            background-color: orange;
+            animation-name: move-orange;
+        }
+      
+        .light-grey-circle {
+            background-color: lightgray;
+            animation-name: move-light-grey;
+        }
+      
+        @keyframes move-orange {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+      
+        @keyframes move-light-grey {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+       
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Ensures it starts at the top of the column */
+        align-self: flex-start; /* Makes it align to the top */
+        margin-top: 100; /* Reset the margin-top */
+        transition: margin-top 0.3s ease-in-out;
+    }
+
+
+        .main-content.active {
+            margin-top: 250px; /* Adjust the margin value as needed */
+        }
+
+    </style>
+</body>
+
+<script type="module" src="script.js"></script>
+<script>
+
+document.getElementById('showOptions').addEventListener('click', function() {
+            const mainContent = document.getElementById('mainContent');
+            mainContent.classList.add('active');
+        });
+
+document.getElementById('showOptions').addEventListener('click', function() {
+            const optionsDiv = document.getElementById('options');
+            const clothingType = document.getElementById('clothesType').value.trim();
+
+            if (clothingType) {
+                
+                document.querySelectorAll('.option-text').forEach(function(p) {
+                    
+                    p.textContent = `Monster Trucks Inertia Car Toys - Friction Powered Car Toys for Toddlers Kids Birthday Christmas Party Supplies Gift for Boys and Girls (4 Color)`;
+                });
+                document.querySelectorAll('.paragraph-text').forEach(function(p) {
+                    p.textContent = `
+                    The Monster Trucks Inertia Car Toys, is a budget-friendly option with a focus on teaching kids about inertia and friction. It offers a good educational element, and the seller claims responsive customer service. On the other hand, the Hamdol Remote Control Car, offers a more versatile and exciting play experience with 360° flips and rechargeable batteries, although it's pricier. Both products claim responsive customer service, so checking customer reviews may help make your decision. The product's price is $20.99 which is competitive for the features it offers. The product has a rating of 4.6 out of 5. It has 2664.0 reviews from customers. It has 2664.0 reviews from customers. Based on the provided criteria and prompt, this laptop is recommended as the best choice. The weighted score is 670.72 out of 1.0, where higher scores indicate a better fit for your needs.`;
+                });
+                optionsDiv.classList.remove('hidden');
+            } else {
+                alert('Please enter what you want in a product.');
+            }
+        });
+
+        document.querySelectorAll('.select-option').forEach(function(button) {
+            button.addEventListener('click', function() {
+                alert('Your selection has been made!');
+            });
+        });
+
+
+        function createRandomCircles() {
+            const container = document.getElementById('circles-container');
+
+            for (let i = 0; i < 4; i++) {
+                const circle = document.createElement('div');
+                circle.classList.add('circle', i % 2 === 0 ? 'orange-circle' : 'light-grey-circle');
+                circle.style.width = `${Math.floor(Math.random() * 100) + 20}px`;
+                circle.style.height = circle.style.width;
+                circle.style.left = `${Math.floor(Math.random() * 100)}%`;
+                container.appendChild(circle);
+            }
+        }
+
+        createRandomCircles();
+</script>
+</html>
+
