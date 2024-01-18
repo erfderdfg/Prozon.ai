@@ -1,10 +1,10 @@
-# Submitted to New Hacks 2023
+# Submitted to New Hacks 2023🚀
 
-# A Comprehensive Guide on prozon.ai
+# A Comprehensive Guide on prozon.ai🎁
 
 >  Have you ever struggled to choose between products? prozon.ai will make your decision for you, while taking into consideration your preferences, helping you make the best purchasing choice!
 
-## Project Statistics
+## Project Statistics📷
 
 <p align="center">
     <a href="https://github.com/simple-icons/simple-icons/actions?query=workflow%3AVerify+branch%3Adevelop">
@@ -26,15 +26,15 @@
 
 </p>
 
-## Inspiration
+## Inspiration🌼
 
 The inspiration behind our project, Prozon.ai, stemmed from the common issue of indecisiveness that many people face when shopping online. We recognized that the abundance of choices and information available can overwhelm consumers, leading to extended decision-making processes. This inspired us to create a solution that simplifies and streamlines the decision-making process for online shoppers.
 
-## What it does
+## What it does🌊
 
 Prozon.ai is a website designed to assist users in making informed purchasing decisions. It accomplishes this by taking two Amazon product links provided by the user and generating a comparative chart that details the features of each item. The platform then suggests the optimal choice based on the user's unique requirements and preferences.
 
-## How we built it
+## How we built it🏀
 
 Our project was developed using a combination of technologies and tools. We distributed tasks between the frontend and backend development teams, using GitHub for collaboration. The process involved:
 
@@ -53,7 +53,7 @@ Technologies and tools used in the project include:
 - Python Selectorlib
 - Python BeautifulSoup
 
-## Challenges we ran into
+## Challenges we ran into🍓
 
 We encountered several challenges during the development of Prozon.ai:
 
@@ -61,18 +61,18 @@ We encountered several challenges during the development of Prozon.ai:
 
 2. **Connecting Frontend and Backend**: Integrating the frontend and backend components to create a cohesive full-stack application was a challenging task. We needed to find an efficient solution for this, and we successfully accomplished it by using Flask.
 
-## Accomplishments that we're proud of
+## Accomplishments that we're proud of🌟
 
 We are proud of several accomplishments in developing Prozon.ai:
 
 - Successfully overcoming the challenges of web scraping by adapting to the limitations of web scraping tools.
 - Creating a user-friendly and efficient platform for comparing and selecting products, helping users make better decisions.
 
-## What we learned
+## What we learned🚲
 
 Through the development of Prozon.ai, we learned valuable lessons about web scraping, backend/frontend integration, and the importance of adapting to challenges. We gained a deeper understanding of technology and tools used in the project, enhancing our skills in these areas.
 
-## What's next for Prozon.ai
+## What's next for Prozon.ai🌅
 
 In the future, we aim to expand the capabilities of Prozon.ai. Some of the potential improvements include:
 
